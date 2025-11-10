@@ -1,13 +1,25 @@
 .onastitle{
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0);
     height: 600px;
     margin-top: 71px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #89f442;
+    font-size: 65px;
 }
+.titlewhite{
+    color: #eeeeee;
+}
+
+
+/*  zeptat se kde udelat dot grid
+    jak udelat hover fade in 
+    jak vyresit vyjizdení ikon na carouselu 
+    zmensit fonty pri responzivite   */
 .mainTitle{
     display: flex;
     align-items: center;
@@ -83,6 +95,8 @@
 background: radial-gradient(circle, rgba(45, 58, 37, 1) 0%, rgba(34, 34, 34, 1) 100%);
 background-size: cover;
 background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
 }
 .team-title{
     width: 100%;
@@ -112,8 +126,21 @@ background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-.mem1{
+.member2{
+    width: 20%;
+    height: 300px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/bom.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mem{
     width: 100%;
         display: flex;
     align-items: center;
@@ -137,14 +164,69 @@ background-repeat: no-repeat;
     height: 100%;
 
 }
-.mem-name{
-    width: 100%;
-    height: 100px;
-    position: absolute;
+  .card-container {
+    perspective: 1000px; /* Needed for 3D effect */
+    width: 200px;
+    height: 300px;
+    margin: 20px;
 
-    bottom: 0%;
-    display: flex;
-}
-.mem-line{
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+
+  }
+
+  /* Flip on hover */
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
     position: absolute;
-}
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+     font-size: 10px;
+     flex-direction: column;
+         letter-spacing: 3px;
+    font-size: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .card-front {
+    background-color: #f0f0f0;
+  }
+
+  .card-back {
+    background-color: #1d1d1d;
+    color: white;
+    transform: rotateY(180deg);
+   
+  }
+
+  /* Optional: multiple cards in a row */
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+  }

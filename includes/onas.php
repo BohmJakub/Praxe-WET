@@ -27,7 +27,6 @@
 <body>
     
 
-
     <div class="menu">
         <button class="option" id="optionBtn"><img src="../images/option.svg" alt="" srcset="" height="40px"></button>
    
@@ -49,7 +48,7 @@
     </div>
 
 <div class="onastitle">
-    <div class="mainTitle"><h1>FOR</h1><h1>HEALTH</h1></div>
+    <div class="mainTitle"><h1 class="titlewhite">For</h1> <img width="150px" src="../images/Obrázek3.png" alt="" srcset=""> <h1 >Health</h1></div>
     <div class="mainline"><img height="200px"  src="../images/line.svg" alt="" srcset=""></div>
 </div>
 <div class="roadmap">
@@ -88,32 +87,89 @@
         <h1>NÁŠ TÝM</h1>
 
     </div>
-    <div class="memlist">
-        <div class="mem1">
-            <div class="member">
-                <div  class="mem-photo">
-                     <img height="300px" width="100%" src="../images/bom.JPG" alt="" srcset="">
-                     <div class="mem-name">
-                          <h2>Jakub Böhm</h2>
-                     </div>
-                     
-                </div>
-
-            </div>
-            <div class="member"></div>
-            <div class="member"></div>
-            <div class="member"></div>
-        </div>
-        <div class="mem2">   
-            <div class="member"></div>
-            <div class="member"></div>
-            <div class="member"></div>
-        </div> 
-
-
-
-
+<div class="cards-wrapper">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/bom.JPG" alt=""></div>
+      <div class="card-face card-back">
+        <h1>Jakub Böhm</h1>
+        <h2>Ředitel</h2>
+        <p>copa ja vim</p>
+      </div>
     </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/heper.JPG" alt="" srcset=""></div>
+      <div class="card-face card-back">
+                <h1>Tomáš Hepner</h1>
+        <h2>Jednatel</h2>
+        <p>copa ja vim</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><video height="100%" width="100%" src="../images/kel1.MOV"></video></div>
+      <div class="card-face card-back">
+                <h1>František Kellner</h1>
+        <h2>Marketingový vedoucí</h2>
+        <p>copa ja vim</p>
+      </div>
+    </div>
+  </div>
+
+   <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/proc.JPG" alt="" srcset=""></div>
+      <div class="card-face card-back">
+                <h1>Filip Procházka</h1>
+        <h2>Obchodní vedoucí</h2>
+        <p>copa ja vim</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cards-wrapper">
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/kup.JPG" alt=""></div>
+      <div class="card-face card-back">
+                <h1>Jan Kupeček</h1>
+        <h2>Účetní vedoucí</h2>
+        <p>copa ja vim</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/agar.JPG" alt=""></div>
+      <div class="card-face card-back">        
+        <h1>Krystýna Pechová</h1>
+        <h2>nevim</h2>
+        <p>copa ja vim</p></div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-face card-front"><img height="100%" width="100%" src="../images/shelby.jpg" alt=""></div>
+      <div class="card-face card-back">        
+        <h1>David Halačka</h1>
+        <h2>nevim</h2>
+        <p>copa ja vim</p></div>
+    </div>
+  </div>
+
+   
+</div>
+
+
+
+    
 
 </div>
 
