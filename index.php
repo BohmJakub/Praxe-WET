@@ -1,56 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-    <div class="headnews"><h1>-50% !!! BLACK FRIDAY !!! -50%</h1></div>
+<?php include "includes/menu.php"?>
+  <div class="carousel">
+    <div class="carousel-item slide1 active"><img src="images/IMG_7576.JPG" width="100%" alt="" srcset=""></div>
+    <div class="carousel-item slide2"><img width="100%" src="images/green.jpg" alt="" srcset=""></div>
+    <div class="carousel-item slide3"><img width="100%" src="images/blue.jpg" alt="" srcset=""></div>
 
+    <button class="arrow left" id="prevBtn">&#10094;</button>
+    <button class="arrow right" id="nextBtn">&#10095;</button>
+  </div>
+<div class="pr1">
+    <div class="pr1left">
+        <div class="slideshow" data-slideshow>
+  <div class="slideshow-inner">
+    <div class="slideshow-item active"><img src="images/prd.JPG" /></div>
+    <div class="slideshow-item"><img src="images/prd2.JPG" /></div>
+    <div class="slideshow-item"><img src="images/prd3.JPG" /></div>
+    <div class="slideshow-item"><img src="images/prd4.JPG" /></div>
+  </div>
 
-    <div class="menu">
-        <button class="option" id="optionBtn"><img src="images/option.svg" alt="" srcset="" height="40px"></button>
-   
-        <img src="images/ForHealth_logo.png" alt="logo" srcset="" width="120px" class="logo">
-        <button><img src="" alt="search" srcset=""></button>
-        <a href=""><img src="" alt="cart" srcset=""></a>
+  <button class="slideshow-arrow prev">‹</button>
+  <button class="slideshow-arrow next">›</button>
+
+  <div class="progress-bar">
+    <div class="progress-segment"><div class="fill"></div></div>
+    <div class="progress-segment"><div class="fill"></div></div>
+    <div class="progress-segment"><div class="fill"></div></div>
+    <div class="progress-segment"><div class="fill"></div></div>
+  </div>
+</div>
+
     </div>
-
-
-    <div id="popup" class="popup hidden">
-        <button class="popclose" id="closePopup">Close</button>
-        <a href="index.php"><img src="images/ForHealth_logo.png" alt="logo" srcset="" width="120px" class="logo2"></a>
-        <a href="includes/nabidka.php" class="opA"><h1>Nabídka</h1></a>
-        <a href="includes/nabidka.php" class="opA"><h1>Příslušenství</h1></a>
-        <a href="#nase" class="opA"><h1>Naše produkty</h1></a>
-        <a href="#onas" class="opA"><h1>O nás</h1></a>
-        <a href="#kon" class="opA"><h1>Kontakt</h1></a>
-        <a href="#sdi" class="opA"><h1>Sdílet</h1></a>
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="footer">
-        <div class="footLogos"></div>
-        <div class="footrest">
-            <div class="footcolumn1">
-                <a href="includes/infoProdukt.php"><h2 id="nase">Naše produkty</h2></a>
-                <a href="includes/onas.php"><h2 id="onas">O nás</h2></a>
-                <a href="includes/kontakt.php"><h2 id="kon">Kontakt</h2></a>
-            </div>
-            <div class="footcolumn2">
-                <h2 id="sdil">share</h2>
-            </div>       
+    <div class="pr1right">
+        <div class="dots"></div>
+        <div class="brand"><h2>For Health ©</h2></div>
+        <div class="naz"><h1 class="white">MEGA BONG</h1>
+                          <h1>PROTEIN</h1>        </div>
+        <div class="desc"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Aliquam erat volutpat. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Aliquam erat volutpat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sap</p></div>
+        <div class="perks">
+            <div class="perk"><img height="30px" src="images/muscle.svg" alt="" srcset=""><p>sval</p></div>
+            <div class="perk"></div>
+            <div class="perk"></div>
+            <div class="perk"></div>
+            <div class="perk"></div>
         </div>
     </div>
 
 
+</div>
 
 
-<script src="js/script.js"> </script>
-</body>
 
-</html>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<?php include "includes/footer.php"?>
