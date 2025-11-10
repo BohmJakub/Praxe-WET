@@ -1,0 +1,150 @@
+.onastitle{
+    width: 100%;
+    background-color: aquamarine;
+    height: 600px;
+    margin-top: 71px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.mainTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.mainline{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(255, 228, 196, 0);
+    position: absolute;
+    bottom: 0%; 
+}
+.roadmap{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 800px;
+    margin-top: 70px;
+}
+.photos1{
+    width: 36%;
+    background-color: rgba(255, 228, 196, 0);
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.photos2{
+    width: 36%;
+    background-color: rgba(255, 228, 196, 0);
+    height: 100%;
+        flex-direction: row;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 20px;
+}
+.col2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 20px;
+}
+.interintro{
+    height: 100%;
+    width: 28%;
+    background-color: #89f442;
+}
+.team{
+    width: 100%;
+    height: 1000px;
+    background: #2D3A25;
+background: radial-gradient(circle, rgba(45, 58, 37, 1) 0%, rgba(34, 34, 34, 1) 100%);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.team-title{
+    width: 100%;
+    height: 30%;
+    font-family: "Orbitron", sans-serif;
+    font-size: 45px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #89f442;
+}
+.memlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+
+    
+    flex-direction: column;
+}
+.member{
+    width: 20%;
+    height: 300px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mem1{
+    width: 100%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+.mem2{
+    width: 100%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+.mem-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+.mem-name{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+
+    bottom: 0%;
+    display: flex;
+}
+.mem-line{
+    position: absolute;
+}

@@ -22,7 +22,216 @@
       color: white;
       font-size: 2rem;
     }
+    .car-title{
+      position: absolute;
+      z-index: 4000;
+      font-family: "Orbitron", sans-serif;
+      left: 25%;
+      top: 10%;
+      background-image: url("../images/pattern.svg");
+      background-repeat: repeat;
+      font-size: 40px;
+    }
+        .car-title2{
+      position: absolute;
+      z-index: 4000;
+      font-family: "Orbitron", sans-serif;
+      left: 25%;
+      top: 10%;
 
+      font-size: 40px;
+    }
+        .car-title3{
+      position: absolute;
+      z-index: 4000;
+      font-family: "Orbitron", sans-serif;
+      left: 19%;
+      top: 8%;
+
+      font-size: 35px;
+    }
+    .car-title-pr{
+      color: #99ff00;
+      font-family: "Orbitron", sans-serif;
+    }
+        .car-title-pr2{
+      color: #ff0000;
+      font-family: "Orbitron", sans-serif;
+    }
+            .car-title-pr3{
+      color: #008cff;
+      font-family: "Orbitron", sans-serif;
+    }
+    .car-perk{
+      display: flex;
+      top: 50%;
+      left: 25%;
+      flex-direction: column;
+      position: absolute;
+      width: 50%;
+      gap: 20px;
+      border-left: solid 3px white;
+      padding-left: 10px;
+    }
+        .car-perk3{
+      display: flex;
+      top: 50%;
+      left: 19%;
+      flex-direction: column;
+      position: absolute;
+      width: 50%;
+      gap: 20px;
+      border-left: solid 3px white;
+      padding-left: 10px;
+    }
+/*---------------------------------------------------------------------------------------*/
+    .icon-text {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: 40px; /* width of icon area */
+  transition: width 0.3s ease;
+  background: transparent;
+  gap: 10px;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.icon-text img {
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+  transition: transform 0.7s ease;
+}
+
+.slide-text {
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* On hover */
+.icon-text:hover {
+  width: 75%; /* expand to reveal text */
+        background-image: url("../images/pattern.svg");
+      background-repeat: repeat;
+}
+
+.icon-text:hover .slide-text {
+  left: 45px;
+  opacity: 1;
+}
+
+.icon-text:hover img {
+  transform: translateX(-10px);
+}
+/* ------------------------------------------------------------------------------------------------------ */
+
+    .icon-text2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: 40px; /* width of icon area */
+  transition: width 0.3s ease;
+  background: transparent;
+  gap: 10px;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.icon-text2 img {
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+  transition: transform 0.7s ease;
+}
+
+.slide-text2 {
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* On hover */
+.icon-text2:hover {
+  width: 75%; /* expand to reveal text */
+
+      text-decoration: underline solid white 2px;
+}
+
+.icon-text2:hover .slide-text2 {
+  left: 45px;
+  opacity: 1;
+}
+
+.icon-text2:hover img {
+  transform: translateX(-10px);
+}
+/*------------------------------------------------------------------------------------------*/
+    .icon-text3 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: 40px; /* width of icon area */
+  transition: width 0.3s ease;
+  background: transparent;
+  gap: 10px;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.icon-text3 img {
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+  transition: transform 0.7s ease;
+}
+
+.slide-text3 {
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  margin-left: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* On hover */
+.icon-text3:hover {
+  width: 75%; /* expand to reveal text */
+
+}
+
+.icon-text3:hover .slide-text3 {
+  left: 45px;
+  opacity: 1;
+}
+
+.icon-text3:hover img {
+  transform: translateX(-10px);
+}
+/*---------------------------------------------------------------------------*/
     .carousel-item.active {
       opacity: 1;
       z-index: 1;
