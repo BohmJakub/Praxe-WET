@@ -183,3 +183,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const imgs = document.querySelectorAll('.fadephoto');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting) {
+          // přidej Animate.css třídy
+          el.classList.add('animate__animated', 'animate__fadeIn');
+          // pokud chceš animaci jen jednou:
+          observer.unobserve(el);
+          // pokud chceš aby se animace opakovala, NEBORESE tento řádek
+        } 
+        // --- varianta pro opakující se animace (odkomentuj pokud potřebuješ) ---
+        // else {
+        //   el.classList.remove('animate__animated', 'animate__fadeIn');
+        // }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+
+    imgs.forEach(img => observer.observe(img));
+  } else {
+    // fallback pro starší prohlížeče: prosté přidání tříd
+    imgs.forEach(img => img.classList.add('animate__animated', 'animate__fadeIn'));
+  }
+});
+

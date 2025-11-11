@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/onas.css">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,29 +58,33 @@
 <div class="roadmap">
     <div class="photos1">
         <div class="col1">
-            <img  src="../images/hep.JPG" alt="" srcset="">
-            <img width="90%" src="../images/agar.JPG" alt="" srcset="">
+            <img class="fadephoto animate__animated  animate__fadeIn"  src="../images/hep.JPG" alt="" srcset="">
+            <img class="fadephoto animate__animated  animate__fadeIn" width="90%" src="../images/agar.JPG" alt="" srcset="">
        </div>
 
         
 
         <div class="col2">
-            <img width="80%" height="250px" src="../images/cici.JPG" alt="">
-            <video width="100%" height="350px" src="../images/kel1.MOV"></video>
+            <img class="fadephoto animate__animated  animate__fadeIn" width="80%" height="250px" src="../images/cici.JPG" alt="">
+            <video class="fadephoto animate__animated  animate__fadeIn" width="100%" height="350px" src="../images/kel1.MOV"></video>
         </div>
     </div>
     <div class="interintro">
+      <div class="arrowbim"><img width="20%"  src="../images/arrowbim.svg" alt="" srcset=""></div>
+      <div class="odst1"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ad dolores, repellat deleniti incidunt tempora ipsam eligendi ex neque id nemo cumque cupiditate reprehenderit ullam aliquid accusamus earum eos quidem!</p></div>
+      <div class="odst1"><p></p></div>
+      
 
     </div>
     <div class="photos2">
         <div class="col2">
-            <img width="80%" height="250px" src="../images/shelby.jpg" alt="" srcset="">
-            <img width="80%" height="350px" src="../images/kokv.jpg" alt="" srcset="">
+            <img class="fadephoto animate__animated animate__fadeIn" width="80%" height="250px" src="../images/shelby.jpg" alt="" srcset="">
+            <img class="fadephoto animate__animated animate__fadeIn" width="80%" height="350px" src="../images/kokv.jpg" alt="" srcset="">
 
         </div>
         <div class="col1">
-            <img height="200px" width="90%" src="../images/hep2.JPG" alt="">
-            <img height="200px" width="90%" src="../images/hepn.JPG" alt="">
+            <img class="fadephoto animate__animated animate__fadeIn"  height="200px" width="90%" src="../images/hep2.JPG" alt="">
+            <img class="fadephoto animate__animated animate__fadeIn" height="200px" width="90%" src="../images/hepn.JPG" alt="">
 
         </div>
     </div>

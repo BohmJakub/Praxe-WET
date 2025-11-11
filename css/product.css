@@ -243,6 +243,16 @@ background: linear-gradient(90deg, rgba(0, 8, 255, 0.15) 1%, rgba(0, 255, 255, 0
   transition: width linear;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media(max-width:600px){
   .pr1{
     flex-direction: column;
@@ -261,3 +271,4 @@ background: linear-gradient(90deg, rgba(0, 8, 255, 0.15) 1%, rgba(0, 255, 255, 0
     font-size: 30px;
   }
 }
+

@@ -1,0 +1,460 @@
+body {
+  font-family: sans-serif;
+    background-color: #1b1b1b;
+  margin: 0;
+  height: 200vh; /* jen kvůli demonstraci scrollování celé stránky */
+}
+@font-face {
+  font-family: 'Green_Energy';
+  src: url('../fonts/Green_Energy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.bigdiv{
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 255, 0);
+    margin-top: 71px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 228, 196, 0);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.everything{
+         width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}
+
+
+
+.product:hover {
+  background: #dcdcdc8d;
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+.img-fit{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2fff00;
+background: linear-gradient(90deg,rgba(47, 255, 0, 0.13) 0%, rgba(255, 221, 0, 0.13) 100%);
+    border-radius:10px ;
+}
+.img-fit2{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1%, rgba(0, 255, 255, 0.11) 100%);
+    border-radius:10px ;
+}
+.img-fit3{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc300;
+background: linear-gradient(90deg, rgba(255, 195, 0, 0.16) 0%, rgba(0, 255, 255, 0.14) 100%);
+    border-radius:10px ;
+}
+.img-fit4{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, rgba(255, 0, 0, 0.14) 100%);
+    border-radius:10px ;
+}
+.img-fit5{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0008ff;
+background: linear-gradient(90deg, rgba(0, 8, 255, 0.15) 1%, rgba(0, 255, 255, 0.11) 100%);
+
+    border-radius:10px ;
+}
+.img-fit6{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background: #c9c9c9;
+background: linear-gradient(90deg, rgba(201, 201, 201, 0.16) 0%, rgba(13, 0, 255, 0.14) 100%);
+    border-radius:10px ;
+}
+
+
+
+
+.text-fit{
+  width: 100%;
+  height: 20%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.monster{
+  font-family: 'Green_Energy';
+  font-size: 26px;
+  color: #1af530;
+}
+.monster2{
+  font-family: 'Green_Energy';
+  font-size: 20px;
+  background: #FFFFFF;
+background: linear-gradient(to right, #FFFFFF 0%, #53F4FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.title{
+    font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  color: #e7e7e7;
+}
+.text-fit .sub-title{
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  color: #80ff00;
+}
+.text-fit .sub-title2{
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  color: #d60000;
+}
+.text-fit .sub-title3{
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  color: #0095ff;
+}
+
+.text-fit .sub-title4{
+  font-family: "Orbitron", sans-serif;
+  font-size: 15px;
+  color: #0095ff;
+}
+
+.text-fit h2{
+  font-size: 14px;
+  color: #e7e7e7;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.text-fit h3{
+  font-size: 12px;
+  color: #e7e7e7;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.filter { width: 20%; 
+  background:#f5f5f500; 
+  padding:12px; 
+  padding-left: 25px;
+  border-radius:8px; 
+  color: #e7e7e7;
+}
+.filter h3{
+  position: absolute;
+  font-family: "Orbitron", sans-serif;
+  color: #80ff00;
+  top: 15%;
+  font-size: 45px;
+}
+.filter p{
+
+  font-family: "Orbitron", sans-serif;
+  color: #80ff00;
+  margin-bottom: 30px;
+  border-top: solid 1px rgb(201, 201, 201);
+  padding-top: 30px;
+
+  font-size: 30px;
+}
+
+
+
+.filter-option{
+  color: rgb(216, 216, 216);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+.control {
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 4px;
+    padding-top: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+    .control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #dfdfdf;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #b2ffb8;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #5eff00;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #37ff00;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 1;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+.control-checkbox .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #8bfc72;
+    border-radius: 3rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-checkbox input + .control_indicator::before {
+    animation: s-ripple 250ms ease-out;
+}
+.control-checkbox input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+.product-page {
+  width: 80%;
+ 
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+
+
+  gap: 20px;
+  padding-top: 20px;
+
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow-y: auto; /* scroll uvnitř divu */
+
+}
+
+.product {
+  background: #eaeaea00;
+  min-width: 23%;
+  max-width: 23%;
+  height: 300px;
+  border-radius: 10px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  
+
+
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+    opacity: 1;
+  transition: opacity 0.3s ease;   /* smooth fade */
+}
+.product {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.product.hidden {
+  opacity: 0;
+}
+
+.product-page {
+  display: flex;
+  flex-wrap: wrap;       /* allow rows to reflow */
+  align-items: flex-start;/* stack to the top */
+  justify-content: flex-start;
+  gap: 15px;
+  transition: all 0.3s ease;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;   /* important: stack to top */
+  justify-content: flex-start;
+  gap: 15px;  
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;  /* 👈 This removes the big vertical gaps */
+  gap: 15px;  
+}
+
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+    opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+
+
+
+.sort-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#sortBtn {
+  background: #222;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sort-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.sort-menu.hidden {
+  display: none;
+}
+
+.sort-option {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 16px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sort-option:hover {
+  background: #f0f0f0;
+}
+
+

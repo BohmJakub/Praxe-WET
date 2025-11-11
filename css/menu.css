@@ -131,7 +131,7 @@
 }
 
 .icon-text:hover img {
-  transform: translateX(-10px);
+  transform: translateX(45%);
 }
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -181,7 +181,7 @@
 }
 
 .icon-text2:hover img {
-  transform: translateX(-10px);
+  transform: translateX(45%);
 }
 /*------------------------------------------------------------------------------------------*/
     .icon-text3 {
@@ -229,7 +229,7 @@
 }
 
 .icon-text3:hover img {
-  transform: translateX(-10px);
+  transform: translateX(45%);
 }
 /*---------------------------------------------------------------------------*/
     .carousel-item.active {

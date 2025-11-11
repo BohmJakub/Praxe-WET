@@ -16,9 +16,9 @@
 }
 
 
-/*  zeptat se kde udelat dot grid
+/*  zeptat se kde udelat dot grid - figma
     jak udelat hover fade in 
-    jak vyresit vyjizdení ikon na carouselu 
+    jak vyresit vyjizdení ikon na carouselu  
     zmensit fonty pri responzivite   */
 .mainTitle{
     display: flex;
@@ -230,3 +230,47 @@ flex-direction: column;
     gap: 30px;
     margin: 20px;
   }
+
+  .fadephoto {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    display: block; /* pro inline <img> můžeš chtít block */
+    will-change: opacity, transform;
+  }
+  /* když animate.css classy přibyde, obrázek se ukáže přes animaci */
+  .fadephoto.animate__animated {
+    opacity: 1;
+  }
+
+.arrowbim{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+@media(max-width:1000px){
+    .photos1{
+        display: none;
+    }
+    .photos2{
+        display: none;
+    }
+    .interintro{
+        width: 80%;
+    }
+    .mainTitle{
+        font-size: 40px;
+        flex-direction: column;
+    }
+    .mainTitle img{
+        width: 90px;
+    }
+    .team-title{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+}
+
