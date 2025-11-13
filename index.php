@@ -1,6 +1,11 @@
+<?php session_start(); ?>
 <?php include "includes/menu.php"?>
+<video autoplay muted loop id="background-video">
+  <source src="images/lines.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
   <div class="carousel">
-    <div class="carousel-item slide1 active"><img src="images/redmain.jpeg" width="100%" alt="" srcset="">
+    <div class="carousel-item slide1 active" onclick="window.location.href='includes/products/product8.php'"><img src="images/redmain.jpeg" width="100%" alt="" srcset="">
       <div class="car-title2">
           <h1>SATAN RAPE</h1>
           <h1 class="car-title-pr2">POWDER </h1>
@@ -33,7 +38,7 @@
   
   
   </div>
-    <div class="carousel-item slide2"><img width="100%" src="images/green.jpg" alt="" srcset="">
+    <div class="carousel-item slide2" onclick="window.location.href='includes/products/product7.php'"><img width="100%" src="images/green.jpg" alt="" srcset="">
         <div class="car-title">
           <h1>MEGA BONG</h1>
           <h1 class="car-title-pr">PROTEIN</h1>
@@ -65,7 +70,7 @@
         
 
     </div>
-    <div class="carousel-item slide3"><img width="100%" src="images/blue.jpg" alt="" srcset="">
+    <div class="carousel-item slide3" onclick="window.location.href='includes/products/product9.php'"><img width="100%" src="images/blue.jpg" alt="" srcset="">
           <div class="car-title3">
           <h1>BOB-BUCKET</h1>
           <h1 class="car-title-pr3">PILLS </h1>

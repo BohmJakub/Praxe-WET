@@ -1,0 +1,541 @@
+@font-face {
+  font-family: 'Green_Energy';
+  src: url('../fonts/Green_Energy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    background-image: url(../images/monback2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio and fills */
+  z-index: -1; /* send behind content */
+}
+.pr-all{
+    width: 100%;
+    background-color: rgba(255, 228, 196, 0);
+    height: 700px;
+    margin-top: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.pr-main{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 90%;
+}
+
+
+.pr-main-top{
+    height: 85%;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pr-main-bottom{
+    height: 15%;
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    align-items: center;
+}
+.pr-main-bottom2{
+    height: 15%;
+    width: 100%;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    align-items: center;
+}
+.pr-top-1{
+    width: 60%;
+    height: 100%;
+    background-color: rgba(240, 255, 255, 0);
+}
+.pr-top-1:before{
+        content: "";
+        position: absolute;
+    left: 0;
+    top: -10px;
+    background-image: url(../images/group3.svg);
+    width: 51px;
+    height: 51px;
+    background-size: contain;
+    filter: invert(1);
+
+}
+.pr-top-1:after{
+        content: "";
+        position: absolute;
+    left: 0;
+    top: -10px;
+    background-image: url(../images/group4.svg);
+    width: 51px;
+    height: 51px;
+    background-size: contain;
+    filter: invert(1);
+
+}
+
+.pr-top-1 h1{
+    font-family: 'Green_Energy';
+    font-size: 90px;
+    margin-left: 25px;
+    color: rgb(228, 228, 228);
+    line-height: 0.8;
+    
+
+}
+.pr-top-1 h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-left: 30px;
+    color: rgb(228, 228, 228);
+}
+.pr-top-1 .h2h{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-left: 25px;
+    color: rgb(4, 4, 4);
+}
+
+
+
+.pr-top-1 p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    color: rgb(228, 228, 228);
+}
+.pr-top-1 .toptext{
+        font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.pr-top-1 .lime{
+    color: rgb(0, 255, 0);
+    font-size: 70px;
+}
+.pr-top-1 .lime2{
+    color: #31f8ff;
+    font-size: 40px;
+}
+.pr-top-1 .lime3{
+    color: #ffd900;
+    font-size: 40px;
+}
+.pr-top-1 .lime4{
+    color: #4dff00;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 10px;
+}
+.pr-top-1 .lime5{
+    color: #e30000;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 10px;
+}
+
+.pr-top-1 .lime6{
+    color: #0051ff;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    margin-top: 10px;
+}
+
+.pr-top-1 .mainName{
+    font-family: 'Green_Energy';
+    font-size: 90px;
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+    line-height: 0.8;
+}
+.pr-top-1 .mainName2{
+    font-family: "Orbitron", sans-serif;
+    font-size: 80px;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.pr-top-2{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 54, 255, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pr-top-3{
+    width: 15%;
+    height: 100%;
+    background-color: rgba(36, 141, 141, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.rate{
+    width: 100%;
+    height: 25%;
+        border: solid 2px rgb(222, 222, 222, 0.3);
+        border-radius: 10px;
+            color: white;
+            display: flex;
+    position: relative;
+    font-size: 21px;
+    padding: 10px;    
+}
+
+.rate h2{
+  align-self: flex-end; /* push h2 to the right */
+  text-align: right;
+  font-size: 12px;
+
+  color: rgb(219, 219, 219);
+}
+.rate2{
+    width: 100%;
+    height: 25%;
+        border: solid 2px rgb(0, 0, 0);
+        border-radius: 10px;
+            color: rgb(0, 0, 0);
+            display: flex;
+    position: relative;
+    font-size: 21px;
+    padding: 10px;    
+}
+
+.rate2 h2{
+  align-self: flex-end; /* push h2 to the right */
+  text-align: right;
+  font-size: 12px;
+
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+.perksnew{
+  align-items: center;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+  margin-top: 20px;
+}
+.perknew{ 
+  height: 80px; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+ background: #2fff00;
+background: linear-gradient(90deg,rgba(47, 255, 0, 0.6) 0%, rgba(255, 221, 0, 0.6) 100%);
+  width: 80px;
+  color: #99ff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 5px;
+  z-index: 4000;
+
+}
+.perknew2{ 
+  height: 80px; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+ background: #ffffff;
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1%, rgba(0, 255, 255, 0.5) 100%);
+   
+  width: 80px;
+  color: #31f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 5px;
+  z-index: 4000;
+  fill: azure;
+}
+.perknew3{ 
+  height: 80px; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: #ffc800b2;
+
+   
+  width: 80px;
+  color: #ffd900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 5px;
+  z-index: 4000;
+  fill: azure;
+}
+.perknew4{ 
+  height: 80px; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+       background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 0, 0, 0.6) 100%);
+
+  width: 80px;
+  color: #df0303;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 5px;
+  z-index: 4000;
+  fill: azure;
+}
+.perknew5{ 
+  height: 80px; /* adjust to control the size  */
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+       
+background: #0008ff;
+background: linear-gradient(90deg, rgba(0, 8, 255, 0.5) 1%, rgba(0, 255, 255, 0.5) 100%);
+
+  width: 80px;
+  color: #0008ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 5px;
+  z-index: 4000;
+  fill: azure;
+}
+
+
+
+.perknew2 p{
+    letter-spacing: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  font-size: 14px;
+  height: 0%;
+  margin: 0%;
+  color: #31f8ff;
+  font-family: 'Green_Energy';
+}
+.perknew3 p{
+    letter-spacing: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  font-size: 14px;
+  height: 0%;
+  margin: 0%;
+  color: #ffd900;
+  font-family: 'Green_Energy';
+}
+
+
+
+.perknew p{
+    letter-spacing: 2px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  font-size: 14px;
+  height: 0%;
+  margin: 0%;
+  color: #99ff00;
+  font-family: 'Green_Energy';
+}
+.buy{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+    width: 15%;
+    height: 60%;
+    color: #d8d8d8;
+    background-color: #7bcd00;
+    margin-left: 25px;
+    font-family: "Orbitron", sans-serif;
+     background: #2fff00;
+background: linear-gradient(90deg,rgba(47, 255, 0, 1) 0%, rgb(23, 200, 0) 100%);
+font-size: 25px;
+}
+.buy:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+     background: #2fff00;
+background: linear-gradient(90deg,rgba(23, 200, 0, 1) 0%, rgb(23, 200, 0) 100%);
+    
+}
+
+.buy2{
+   clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+    width: 15%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #7bcd00;
+    margin-left: 25px;
+    font-family: "Orbitron", sans-serif;
+     background: #ffffff;
+     font-size: 25px;
+background: linear-gradient(90deg,rgb(255, 255, 255) 0%, rgb(2, 242, 255) 100%);
+}
+.buy2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+     background: #ffffff;
+background: linear-gradient(90deg,rgb(4, 255, 247) 0%, rgb(255, 255, 255) 100%);
+    
+}
+
+.buy3{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+    width: 15%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffee00;
+    margin-left: 25px;
+    font-family: "Orbitron", sans-serif;
+     background: #ffffff;
+     font-size: 25px;
+background: linear-gradient(90deg,#ffa200 0%, rgb(255, 255, 2) 100%);
+}
+.buy3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+     background: #ffffff;
+background: linear-gradient(90deg,rgb(255, 255, 2) 0%, rgb(255, 162, 0) 100%);
+    
+}
+.buy4{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+    width: 15%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffee00;
+    margin-left: 25px;
+    font-family: "Orbitron", sans-serif;
+     background: #ffffff;
+     font-size: 25px;
+background: linear-gradient(90deg,#000000 0%, rgb(255, 0, 0) 100%);
+}
+.buy4:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+     background: #ffffff;
+background: linear-gradient(90deg,rgb(255, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    
+}
+.buy5{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+    width: 15%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffee00;
+    margin-left: 25px;
+    font-family: "Orbitron", sans-serif;
+     background: #ffffff;
+     font-size: 25px;
+background: linear-gradient(90deg,#252525 0%, #0008ff 100%);
+}
+.buy5:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+     background: #ffffff;
+background: linear-gradient(90deg,#0008ff 0%, rgb(26, 26, 26) 100%);
+    
+}
+
+
+.cart-message{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+        width: 15%;
+    height: 60%;
+    color: #000000;
+    background-color: #ffffff;
+    margin-left: 10px;
+    font-family: "Orbitron", sans-serif;
+     background: #ffffff;
+     font-size: 12px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     text-align: justify;
+
+}
+.pr-main-bottom2 .cart-message{
+        clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+        width: 15%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffffff;
+    margin-left: 10px;
+    font-family: "Orbitron", sans-serif;
+     background: #000000;
+     font-size: 12px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     text-align: justify;
+
+}

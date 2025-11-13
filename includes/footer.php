@@ -1,4 +1,5 @@
-   <div class="footer">
+ <?php session_start(); ?>
+ <div class="footer">
         <div class="footLogos"></div>
         <div class="footrest">
             <div class="footcolumn1">

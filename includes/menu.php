@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php session_start(); ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
         <button class="option" id="optionBtn"><img src="images/option.svg" alt="" srcset="" height="40px"></button>
    
         <img src="images/ForHealth_logo.png" alt="logo" srcset="" width="120px" class="logo">
-        <button class="cart"><img height="40px" src="images/cart.svg" alt="search" srcset=""></button>
+        <button class="cart" onclick="window.location.href='includes/cart.php'"><img height="40px" src="images/cart.svg" alt="search" srcset=""></button>
         <a href=""><img src="" alt="user" srcset=""></a>
     </div>
 

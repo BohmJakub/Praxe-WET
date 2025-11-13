@@ -1,0 +1,112 @@
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio and fills */
+  z-index: -1; /* send behind content */
+}
+ body { 
+    font-family: Arial, sans-serif;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ button.remove-btn { 
+    background: red; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; }
+ .total { 
+    font-weight: bold; 
+    margin-top: 20px; 
+    font-size: 1.2em; }
+ a { 
+    display: inline-block; 
+    margin-top: 20px; 
+    text-decoration: none; 
+    color: blue; }
+.cart-main{
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(165, 42, 42, 0);
+    height: 700px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.cart-left{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 119, 255, 0);
+}
+.cart-right{
+    width: 20%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.leftrow1{
+    width: 100%;
+    height: 11%;
+    background-color: rgba(255, 228, 196, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.checkpoint{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(201, 201, 201);
+  font-family: "Bebas Neue", sans-serif;
+    font-size: 11px;
+    border-top: rgb(201, 201, 201) solid 2px;
+    
+}
+.checkpoint2{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+  font-family: "Bebas Neue", sans-serif;
+    font-size: 13px;
+    border-top: rgb(123, 255, 0) solid 2px;
+}
+.leftrow2{
+    width: 100%;
+    height: 5%;
+    background-color: azure;
+}
+
+.cartTable{
+    width: 100%;
+    background-color: rgba(20, 255, 243, 0.644);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: fit-content;
+}

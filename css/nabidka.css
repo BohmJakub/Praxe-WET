@@ -132,6 +132,15 @@ background: linear-gradient(to right, #FFFFFF 0%, #53F4FF 100%);
 -webkit-text-fill-color: transparent;
 
 }
+.monster3{
+  font-family: 'Green_Energy';
+  font-size: 20px;
+  background: #FFFFFF;
+background: linear-gradient(to right, #00ffc8 0%, #ffd900 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
 .title{
     font-family: "Orbitron", sans-serif;
   font-size: 20px;
