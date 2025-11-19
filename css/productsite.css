@@ -521,6 +521,7 @@ background: linear-gradient(90deg,#0008ff 0%, rgb(26, 26, 26) 100%);
      justify-content: center;
      display: flex;
      text-align: justify;
+     
 
 }
 .pr-main-bottom2 .cart-message{
@@ -537,5 +538,246 @@ background: linear-gradient(90deg,#0008ff 0%, rgb(26, 26, 26) 100%);
      justify-content: center;
      display: flex;
      text-align: justify;
+     padding: 10px;
+}
 
+/* ========================================================== */
+/*   RESPONSIVE  –  TABLETS (max-width: 1100px)               */
+/* ========================================================== */
+@media(max-width:1100px){
+
+  .pr-all{
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .pr-main{
+    width: 90%;
+    height: auto;
+  }
+
+  .pr-main-top{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pr-top-1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .pr-top-1 h1,
+  .pr-top-1 .mainName,
+  .pr-top-1 .mainName2{
+    font-size: 60px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .pr-top-1 h2,
+  .pr-top-1 .h2h{
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .pr-top-1 p,
+  .pr-top-1 .toptext{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .perksnew{
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .perknew,
+  .perknew2,
+  .perknew3,
+  .perknew4,
+  .perknew5{
+    width: 70px;
+    height: 70px;
+  }
+
+  .pr-top-2{
+    width: 60%;
+  }
+
+  .pr-top-3{
+    width: 60%;
+  }
+
+  .buy,
+  .buy2,
+  .buy3,
+  .buy4,
+  .buy5,
+  .cart-message{
+    width: 35%;
+    font-size: 20px;
+  }
+}
+
+
+
+/* ========================================================== */
+/*   RESPONSIVE – MOBILE (max-width: 700px)                   */
+/* ========================================================== */
+@media(max-width:700px){
+
+  .pr-all{
+    margin-top: 120px;
+    padding: 20px 0;
+  }
+
+  .pr-main{
+    width: 95%;
+  }
+
+  .pr-main-top{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .pr-top-1{
+    width: 100%;
+    text-align: center;
+  }
+
+  .pr-top-1 h1,
+  .pr-top-1 .mainName,
+  .pr-top-1 .mainName2{
+    font-size: 45px;
+  }
+
+  .pr-top-1 h2,
+  .pr-top-1 .h2h{
+    font-size: 20px;
+  }
+
+  .pr-top-1 p,
+  .pr-top-1 .toptext{
+    font-size: 18px;
+  }
+
+  .lime,
+  .lime2,
+  .lime3,
+  .lime4,
+  .lime5,
+  .lime6{
+    font-size: 30px !important;
+  }
+
+  .perksnew{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .perknew,
+  .perknew2,
+  .perknew3,
+  .perknew4,
+  .perknew5{
+    width: 55px;
+    height: 55px;
+    font-size: 10px;
+  }
+
+  .pr-top-2,
+  .pr-top-3{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .rate,
+  .rate2{
+    height: 100px;
+    font-size: 15px;
+  }
+
+  .rate h2,
+  .rate2 h2{
+    font-size: 10px;
+  }
+
+  .pr-main-bottom,
+  .pr-main-bottom2{
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .buy,
+  .buy2,
+  .buy3,
+  .buy4,
+  .buy5{
+    width: 70%;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .cart-message{
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* ========================================================== */
+/*   EXTRA SMALL MOBILE (max-width: 480px)                    */
+/* ========================================================== */
+@media(max-width:480px){
+
+  .pr-top-1 h1,
+  .pr-top-1 .mainName,
+  .pr-top-1 .mainName2{
+    font-size: 36px;
+  }
+
+  .pr-top-1 h2,
+  .pr-top-1 .h2h{
+    font-size: 18px;
+  }
+
+  .pr-top-1 p,
+  .pr-top-1 .toptext{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .perknew,
+  .perknew2,
+  .perknew3,
+  .perknew4,
+  .perknew5{
+    width: 45px;
+    height: 45px;
+    font-size: 8px;
+  }
+
+  .buy,
+  .buy2,
+  .buy3,
+  .buy4,
+  .buy5{
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .cart-message{
+    width: 85%;
+    font-size: 12px;
+  }
 }

@@ -87,6 +87,7 @@
     height: 100%;
     width: 28%;
     background-color: #89f442;
+    clip-path: polygon(10% 0, 100% 0, 100% 30%, 100% 90%, 88% 100%, 30% 100%, 0 100%, 0 10%);
 }
 .team{
     width: 100%;
@@ -274,3 +275,190 @@ flex-direction: column;
 
 }
 
+/* ====================================================== */
+/*      TABLETS – max-width: 1000px                       */
+/* ====================================================== */
+
+@media (max-width: 1000px){
+
+  .onastitle{
+    height: 350px;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .mainTitle{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 40px;
+  }
+
+  .mainline{
+    height: 120px;
+  }
+
+  .roadmap{
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .photos1,
+  .photos2{
+    display: none; /* Skryj velké obrázky */
+  }
+
+  .interintro{
+    width: 85%;
+    height: auto;
+    min-height: 350px;
+  }
+
+  /* Team */
+  .team{
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .team-title{
+    font-size: 32px;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .memlist{
+    height: auto;
+  }
+
+  .mem,
+  .mem2{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .member,
+  .member2{
+    width: 60%;
+    height: 250px;
+  }
+
+  .cards-wrapper{
+    gap: 20px;
+  }
+
+  .card-container{
+    width: 180px;
+    height: 260px;
+  }
+
+}
+
+
+
+
+/* ====================================================== */
+/*              MOBILE – max-width: 650px                 */
+/* ====================================================== */
+
+@media (max-width: 650px){
+
+  .onastitle{
+    height: 280px;
+    font-size: 36px;
+  }
+
+  .mainTitle{
+    font-size: 32px;
+  }
+
+  .mainTitle img{
+    width: 70px;
+  }
+
+  .interintro{
+    width: 95%;
+    clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 90%, 90% 100%, 30% 100%, 0 100%, 0 10%);
+  }
+
+  /* Tým */
+  .member,
+  .member2{
+    width: 80%;
+    height: 220px;
+  }
+
+  .team-title{
+    font-size: 26px;
+  }
+
+  .cards-wrapper{
+    gap: 15px;
+  }
+
+  .card-container{
+    width: 150px;
+    height: 230px;
+  }
+
+  .card-face{
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+
+
+/* ====================================================== */
+/*     SMALL MOBILE – max-width: 450px                    */
+/* ====================================================== */
+
+@media (max-width: 450px){
+
+  .onastitle{
+    font-size: 28px;
+    height: 220px;
+  }
+
+  .mainTitle{
+    font-size: 26px;
+  }
+
+  .mainline{
+    height: 100px;
+  }
+
+  .interintro{
+    width: 90%;
+    min-height: 280px;
+  }
+
+  .team-title{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .mem,
+  .mem2{
+    gap: 10px;
+  }
+
+  .member,
+  .member2{
+    width: 90%;
+    height: 200px;
+  }
+
+  .card-container{
+    width: 130px;
+    height: 200px;
+  }
+
+  .card-face{
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .arrowbim img{
+    width: 40px !important;
+  }
+}

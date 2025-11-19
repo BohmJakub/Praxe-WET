@@ -1,0 +1,174 @@
+.contact-form {
+        width: 350px;
+        padding: 20px;
+        background: #ffffff21;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-family: "Orbitron", sans-serif;
+        letter-spacing: 3px;
+        color: rgb(255, 255, 255);
+             border: solid 2px rgba(222, 222, 222, 0.616);
+        border-radius: 10px;
+            color: white;
+            display: flex;
+    position: relative;
+    font-size: 21px;
+    padding: 10px;  
+    font-weight: bold;
+    }
+
+
+.nameIn{
+  clip-path: polygon(0 7%, 7% 0, 100% 0, 100% 93%, 93% 100%, 0 100%);
+}
+.emailIn{
+    clip-path: polygon(0 7%, 7% 0, 100% 0, 100% 93%, 93% 100%, 0 100%);
+}
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: 1px solid #ccc;
+       
+       display: flex;
+       font-family: "Bebas Neue", sans-serif;
+       letter-spacing: 3px;
+                  border: solid 2px rgba(222, 222, 222, 0.733);
+        border-radius: 10px;
+            color: white;
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.151);
+    position: relative;
+    font-size: 16px;
+    padding: 10px;  
+    font-weight: bold;
+
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        background: #51ff0025;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s;
+        letter-spacing: 3px;
+        font-family: "Bebas Neue", sans-serif;
+       border: solid 2px rgba(116, 255, 2, 0.582);
+    }
+
+    .contact-form button:hover {
+        background: #47df00;
+    }
+
+    .success {
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #c7ffd1;
+        border: 1px solid #52a05b;
+        border-radius: 6px;
+    }
+
+.contactAll{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    background-color: #00000000;
+}
+/* ========================================================= */
+/* TABLETS – max-width: 900px                                 */
+/* ========================================================= */
+@media (max-width: 900px){
+
+  .contactAll{
+    margin-top: 40px;
+  }
+
+  .contact-form{
+    width: 80%;
+    height: auto;
+    gap: 25px;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  .contact-form button{
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+
+
+/* ========================================================= */
+/* MOBILE – max-width: 600px                                  */
+/* ========================================================= */
+@media (max-width: 600px){
+
+  .contactAll{
+    margin-top: 120px;
+  }
+
+  .contact-form{
+    width: 90%;
+    height: auto;
+    gap: 20px;
+    font-size: 16px;
+    padding: 15px;
+    letter-spacing: 2px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .contact-form button{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+/* ========================================================= */
+/* SMALL MOBILE – max-width: 430px                            */
+/* ========================================================= */
+@media (max-width: 430px){
+
+  .contact-form{
+    width: 95%;
+    font-size: 15px;
+    padding: 12px;
+    gap: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .contact-form button{
+    font-size: 17px;
+    padding: 7px;
+  }
+}

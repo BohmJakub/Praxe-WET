@@ -5,16 +5,11 @@
     margin-top: 100px;
 
 }
-.footLogos{
-    width: 100%;
-    height: 150px;
-    background-color: rgb(22, 21, 21);
-    border: solid white 1px;
-}
+
 .footrest{
     width: 100%;
         background-color: rgb(22, 21, 21);
-    border: solid white 1px;
+    border-top: solid white 1px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -22,9 +17,14 @@
 
 }
 .footcolumn1{
-    background-color: rgba(146, 146, 146, 0);
+    background-color: rgba(156, 216, 59, 0);
     width: 20%;
     margin-right: 5%;
+    flex-direction: column;
+    display: flex;
+    
+    justify-content: center;
+    height: 50%;
 }
 .footcolumn1 h2{
     margin-bottom: 10%;
@@ -42,4 +42,228 @@ a{
     margin-left: 5%;
     text-decoration: none;
     color: aliceblue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sharecol{
+    background-color: rgba(127, 255, 212, 0);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+}
+.sharecol2{
+    background-color: rgba(255, 195, 127, 0);
+    width: 50%;
+    height: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.sharebut{
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    height: 45%;
+    width: 80%;
+    border: none;
+
+}
+.sharebutx{
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.288);
+    height: 45%;
+    width: 80%;
+    border: none;
+
+}
+
+
+
+.footLogos{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(22, 21, 21);
+    border-top: solid white 1px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 15px;
+    gap: 5%;
+
+}
+
+.badge{
+    border-radius: 100%;
+    height: 120px;
+    width: 8%;
+    background-color: rgba(240, 248, 255, 0);
+        display: flex;
+    align-content: center;
+    justify-content: center;
+    border: none;   
+}
+.badge2{
+    border-radius: 100%;
+    height: 120px;
+    width: 8%;
+    background-color: rgba(240, 248, 255, 0);
+        display: flex;
+    align-content: center;
+    justify-content: center;
+    border: none; 
+    margin-top: 15px;  
+}
+#kon{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+#onas{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+/* ========================================================= */
+/*       TABLETS (max-width: 1000px)                         */
+/* ========================================================= */
+@media (max-width: 1000px){
+
+  .footer{
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .footrest{
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 25px;
+  }
+
+  .footcolumn1,
+  .footcolumn2{
+    width: 80%;
+    margin: 0;
+    height: auto;
+    text-align: center;
+  }
+
+  .footcolumn1 h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .sharecol,
+  .sharecol2{
+    flex-direction: row;
+    height: auto;
+    gap: 10px;
+  }
+
+  .sharebut,
+  .sharebutx{
+    width: 60px;
+    height: 60px;
+  }
+
+  /* spodní loga */
+  .footLogos{
+    height: auto;
+    padding: 20px 0;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .badge,
+  .badge2{
+    width: 90px;
+    height: 90px;
+  }
+
+  #kon,
+  #onas{
+    font-size: 28px;
+  }
+}
+
+
+/* ========================================================= */
+/*       MOBILE (max-width: 650px)                           */
+/* ========================================================= */
+@media (max-width: 650px){
+
+  .footrest{
+    padding: 30px 0;
+    gap: 20px;
+  }
+
+  .footcolumn1,
+  .footcolumn2{
+    width: 90%;
+  }
+
+  .sharecol,
+  .sharecol2{
+    gap: 8px;
+  }
+
+  .sharebut,
+  .sharebutx{
+    width: 50px;
+    height: 50px;
+  }
+
+  .footLogos{
+    gap: 15px;
+  }
+
+  .badge,
+  .badge2{
+    width: 70px;
+    height: 70px;
+  }
+
+  #kon,
+  #onas{
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+}
+
+
+/* ========================================================= */
+/*       SMALL MOBILE (max-width: 430px)                     */
+/* ========================================================= */
+@media (max-width: 430px){
+
+  .footcolumn1 h2{
+    font-size: 20px;
+  }
+
+  .sharebut,
+  .sharebutx{
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge,
+  .badge2{
+    width: 55px;
+    height: 55px;
+  }
+
+  #kon,
+  #onas{
+    font-size: 20px;
+  }
 }

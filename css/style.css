@@ -48,7 +48,12 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 45%;
+    flex-direction: row;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    left: 25%;
+    gap: 1%;
 }
 
 
@@ -123,22 +128,21 @@ body{
        background-color: rgb(39, 38, 38);
 }
   .popup {
-    position: absolute;
+    
     top: 40px; /* Adjust depending on button position */
     right: 0;
     background-color: rgb(95, 90, 90);
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    
+   
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     padding: 10px;
     display: none; /* Hidden by default */
     z-index: 90000;
-    height: 400px;
     position: fixed;
     top: 0;
     left: -320px;              /* start off-screen */
     width: 320px;
-    height: 100%;
+    height: 80%;
     background: #fff;
     box-shadow: 4px 0 16px rgba(0,0,0,0.25);
     transition: left 0.35s ease;
@@ -148,7 +152,10 @@ body{
     align-items: center;
     flex-direction: column;
     text-decoration: none;
-        background-color: #6ba07d;
+    color: #7fff00;
+        background-color: #202020b7;
+       clip-path: polygon(95% 0, 100% 4%, 100% 60%, 100% 100%, 7% 100%, 0 95%, 0 0);
+         
   }
 .opA{
     left: 0%;
@@ -157,8 +164,8 @@ body{
     width: 95%;
     margin-bottom: 15px;
     margin-left: 5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:#349202;
+    font-family: "Orbitron", sans-serif;
+    color:chartreuse;
     background-color: rgba(31, 39, 34, 0);
     font-size: 15px;
 }
@@ -174,9 +181,16 @@ body{
   }
 .popclose{
     position: absolute;
-    right: 0%;
+    right: 5%;
     display: flex;
-    top: 4%;
+    width: 30px;
+    height: 20%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    background-color: rgba(29, 29, 29, 0);
+    border: none;
   }
 .logo2{
         display: flex;
@@ -189,6 +203,162 @@ body{
 
 @media(max-width:600px){
   .logo{
-    left: 20%;
+    left: 1%;
   }
 }
+/* ============================================================= */
+/* TABLETY – max-width: 1000px                                   */
+/* ============================================================= */
+
+@media(max-width: 1000px){
+
+  .menu{
+    padding-right: 10%;
+    height: 65px;
+  }
+
+  .logo{
+    font-size: 9px;
+    left: 10%;
+  }
+
+  .option{
+    left: 3%;
+    transform: scale(0.9);
+  }
+
+  .cart{
+    transform: scale(0.9);
+  }
+
+  .popup{
+    width: 300px;
+    clip-path: polygon(95% 0, 100% 4%, 100% 60%, 100% 100%, 7% 100%, 0 95%, 0 0);
+  }
+
+  .opA{
+    font-size: 14px;
+  }
+}
+
+
+
+/* ============================================================= */
+/* MOBIL – max-width: 700px                                      */
+/* ============================================================= */
+
+@media(max-width: 700px){
+
+  .menu{
+    padding-right: 5%;
+    height: 60px;
+  }
+
+  .logo{
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 3px;
+    font-size: 8px;
+  }
+
+  .option{
+    left: 4%;
+    transform: scale(0.85);
+  }
+
+  .cart{
+    transform: scale(0.85);
+  }
+
+  .popup{
+    width: 260px;
+    height: 90%;
+    top: 0;
+    clip-path: polygon(98% 0, 100% 10%, 100% 60%, 100% 100%, 7% 100%, 0 95%, 0 0);
+  }
+
+  .opA{
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+
+  .popclose{
+    top: 8%;
+  }
+}
+
+
+
+/* ============================================================= */
+/* MALÉ MOBILY – max-width: 480px                                */
+/* ============================================================= */
+
+@media(max-width: 480px){
+
+  .menu{
+    padding-right: 3%;
+    height: 55px;
+  }
+
+  .logo{
+    font-size: 7px;
+    gap: 2px;
+  }
+
+  .option{
+    left: 3%;
+    transform: scale(0.8);
+  }
+
+  .cart{
+    transform: scale(0.8);
+  }
+
+  .popup{
+    width: 230px;
+    height: 100%;
+  }
+
+  .opA{
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .popclose{
+    right: 8%;
+    top: 6%;
+  }
+
+  .logo2{
+    transform: scale(0.9);
+    margin-top: 0;
+  }
+}
+
+
+
+/* EXTRA SMALL – max-width: 360px */
+@media(max-width: 360px){
+
+  .logo{
+    font-size: 6px;
+  }
+
+  .option{
+    transform: scale(0.75);
+  }
+
+  .cart{
+    transform: scale(0.75);
+  }
+
+  .popup{
+    width: 200px;
+  }
+
+  .opA{
+    font-size: 11px;
+  }
+}
+

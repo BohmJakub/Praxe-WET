@@ -32,7 +32,7 @@ if (isset($_POST['name']) && isset($_POST['price']) && isset($_POST['image'])) {
 
     echo json_encode([
         'success' => true,
-        'message' => "$name has been added to your cart!"
+        'message' => "V košíku!"
     ]);
     exit;
 }

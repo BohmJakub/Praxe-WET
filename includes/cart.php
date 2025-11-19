@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
@@ -19,52 +19,11 @@ if (isset($_POST['remove'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Your Cart</title>
-    <link rel="stylesheet" href="../css/cart.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
-<body>
+<?php include "headerMain.php"?>
 <video autoplay muted loop id="background-video">
-  <source src="../images/lines.mp4" type="video/mp4">
+  <source src="../images/monlive.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
-
-
-    <div class="menu">
-        <button class="option" id="optionBtn"><img src="../images/option.svg" alt="" srcset="" height="40px"></button>
-   
-        <img src="../images/ForHealth_logo.png" alt="logo" srcset="" width="120px" class="logo">
-        <button class="cart" onclick="window.location.href='cart.php'"><img height="40px" src="../images/cart.svg" alt="search" srcset=""></button>
-        <a href=""><img src="" alt="user" srcset=""></a>
-    </div>
-
-
-    <div id="popup" class="popup hidden">
-        <button class="popclose" id="closePopup">Close</button>
-        <a href="../index.php"><img src="../images/ForHealth_logo.png" alt="logo" srcset="" width="120px" class="logo2"></a>
-        <a href="includes/nabidka.php" class="opA"><h1>Nabídka</h1></a>
-        <a href="includes/nabidka.php" class="opA"><h1>Příslušenství</h1></a>
-        <a href="#nase" class="opA"><h1>Naše produkty</h1></a>
-        <a href="#onas" class="opA"><h1>O nás</h1></a>
-        <a href="#kon" class="opA"><h1>Kontakt</h1></a>
-        <a href="#sdi" class="opA"><h1>Sdílet</h1></a>
-    </div>
 
     <div class="cart-main">
         <div class="cart-left">
@@ -74,7 +33,13 @@ if (isset($_POST['remove'])) {
                 <div class="checkpoint"><h1>Platba</h1></div>
             </div>
 
-            <div class="leftrow2"></div>
+            <div class="leftrow2">
+                
+                <div class="polozka"><p>položka</p></div>
+                <div class="cena"><p>cena</p></div>
+                <div class="mnoz"><p>množství</p></div>
+                <div class="mezi"><p>mezisoučet</p></div>
+            </div>
             <div class="leftrow3">
         
 
@@ -87,15 +52,20 @@ if (isset($_POST['remove'])) {
                                     $total += $subtotal;
                             ?>
                               <li class="cart-item" data-name="<?php echo htmlspecialchars($item['name']); ?>">
-    <img width="20%" src="<?php echo htmlspecialchars($item['image']); ?>" 
+    <img width="10%" src="<?php echo htmlspecialchars($item['image']); ?>" 
          alt="<?php echo htmlspecialchars($item['name']); ?>" 
          class="cart-image">
-    <?php echo htmlspecialchars($item['name']); ?> — 
-    $<?php echo number_format($item['price'], 2); ?> × 
+         <div class="NamePrice">
+
+        <?php  echo htmlspecialchars($item['name']); ?> — 
+        <?php echo number_format($item['price'], 2); ?>,-  
+        </div>
+    <div class="qtbut">
     <button class="qty-btn" data-action="decrease">-</button>
     <span class="quantity"><?php echo $item['quantity']; ?></span>
-    <button class="qty-btn" data-action="increase">+</button> =
-    $<span class="subtotal"><?php echo number_format($subtotal, 2); ?></span>
+    <button class="qty-btn" data-action="increase">+</button> 
+    </div>=
+    <span class="subtotal"><?php echo number_format($subtotal, 2); ?>,-</span>
 </li>
                             <?php endforeach; ?>
                         <?php else: ?>
@@ -109,31 +79,27 @@ if (isset($_POST['remove'])) {
         </div>    
 
         <div class="cart-right">
-            <?php if (!empty($_SESSION['cart'])): ?>
-                        <p class="total">Total: <?php echo number_format($total, 2); ?>,-</p>
-                    <?php endif; ?>
-
-                    <a href="../index.php">Continue Shopping</a>
-        </div>
-    </div>
-
-
-
-
- <div class="footer">
-        <div class="footLogos"></div>
-        <div class="footrest">
-            <div class="footcolumn1">
-                <a href="includes/infoProdukt.php"><h2 id="nase">Naše produkty</h2></a>
-                <a href="includes/onas.php"><h2 id="onas">O nás</h2></a>
-                <a href="includes/kontakt.php"><h2 id="kon">Kontakt</h2></a>
+            <div class="shrnuti">
+                <div class="shr1"><p>Shrnutí objednávky</p></div>
+                <div class="shr2">
+                    <?php if (!empty($_SESSION['cart'])): ?>
+                                <p class="total"><?php echo number_format($total, 2); ?>,-</p>
+                            <?php endif; ?>
+                </div>            
+                <div class="shr3">
+                            <a href="../index.php">Prokačovat v nákupu</a>
+                </div>            
             </div>
-            <div class="footcolumn2">
-                <h2 id="sdil">share</h2>
-            </div>       
+            <div class="sleva">Zadejte slevový kód</div>
+            <div class="nabidka">
+                <div class="nab">Nakupte za 1500,- a dostanete 1 vzorek</div>
+                <div class="nab2">Doprava zdarma</div>
+            </div>
+            <div class="uhrada">přejít K POkladně</div>
+
+
         </div>
     </div>
-
 
 
 <script>
@@ -179,6 +145,10 @@ document.querySelectorAll('.qty-btn').forEach(button => {
     });
 });
 </script>
+
+<?php include "footerMain.php"?>
+
+
 
 <script src="../js/script.js"> </script>
 </body>

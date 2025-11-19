@@ -283,3 +283,101 @@ background: linear-gradient(90deg, rgba(0, 8, 255, 0.15) 1%, rgba(0, 255, 255, 0
   }
 }
 
+@media(max-width: 1000px){
+  .pr1, .pr2, .pr3{
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 50px 20px;
+    height: fit-content;
+  }
+  .pr1, .pr3{
+    flex-direction: column-reverse;
+  }
+
+  .pr1left, .pr2left, .pr3left,
+  .pr1right, .pr2right, .pr3right{
+    width: 100%;
+    height: auto;
+  }
+
+  .slideshow{
+    height: 300px;
+  }
+
+  .naz, .naz2, .naz3{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .desc{
+    font-size: 18px;
+    text-align: center;
+    border: none;
+  }
+
+  .brand{
+    justify-content: center;
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+   .perks{
+    width: 100%;
+    bottom: 5%;
+    gap: 10px;
+    border-top: none;
+    border: none;
+    margin-top: 200px;
+  }
+}
+
+/* ---------------------------- */
+/* SMALL SCREENS (PHONES <600px)*/
+/* ---------------------------- */
+
+@media(max-width: 600px){
+
+  /* Šířky bloků */
+  .pr1, .pr2, .pr3{
+    margin-top: 120px;
+    padding: 40px 10px;
+  }
+
+  /* Slideshow */
+  .slideshow{
+    height: 240px;
+  }
+
+  /* Nadpisy */
+  .naz, .naz2, .naz3{
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .desc{
+    font-size: 16px;
+    border: none;
+  }
+
+  /* Perks */
+  .perks{
+    width: 100%;
+    bottom: 5%;
+    gap: 10px;
+    border-top: none;
+    border: none;
+    margin-top: 200px;
+  }
+
+  .perk, .perk2, .perk3{
+    width: 70px;
+    height: 70px;
+    font-size: 10px;
+  }
+
+  /* Slideshow arrows */
+  .slideshow-arrow{
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+} 
